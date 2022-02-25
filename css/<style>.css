@@ -1,0 +1,26 @@
+<style>
+body {
+margin: 0 10%;
+font-family: 'barriecito', cursive;
+}
+
+header {
+    background-color: turquoise;
+    color: #ff6347;
+    padding: 2rem;
+}
+
+h1 {
+font-size: 2rem;
+}
+h2 {
+font-size: 1.5rem;
+}
+h3 {
+font-size: 1.25rem;
+}
+.circle {
+    border-radius: 50%;
+    border: 7px solid #ff6347
+}
+</style>
