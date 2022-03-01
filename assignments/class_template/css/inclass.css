@@ -52,11 +52,11 @@ img {
 @media screen and (min-width: 40rem) { 
     .site-id {
         grid-column: 1 / span 6;
-        background-color: darkgreen;
+        background-color: #006400;
     }
     .menu {
-        grid-column: 1 / span 6;
-        background-color:indigo;
+        grid-column: 7 / span 6;
+        background-color: indigo;
     }
     .company {
         grid-column: 1 / span 8;
