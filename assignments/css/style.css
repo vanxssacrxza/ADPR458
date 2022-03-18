@@ -68,10 +68,9 @@ nav {
 nav ul {
    margin: 0;
    padding: 0;
-   list-style: none;
+   list-style: none; 
    display: flex;
-   flex-direction: row;
-   flex-wrap: nowrap;
+   flex-flow: row wrap;
 }
 nav li {
     margin: 0 0.5rem;
