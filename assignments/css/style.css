@@ -70,8 +70,9 @@ nav ul {
    padding: 0;
    list-style: none;
    display: flex;
-   flex-flow: row wrap;
-
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 nav li {
     margin: 0 0.5rem;
