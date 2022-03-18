@@ -56,8 +56,6 @@ a:hover {
     grid-column: span 12;
 }
  
-
-}
 /***** Nav using flexbox ****/
 nav {
     background-color: seagreen;
