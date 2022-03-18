@@ -1,11 +1,15 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 body {
     margin: 0;
-    font-family: 'barriecito', cursive;
     background-image: url("/food.png");
 }
 
 header {
-    background-color: turquoise;
+    background-color: black;
     color: #ff6347;
     padding: 2rem;
 }
@@ -19,9 +23,12 @@ h2 {
 h3 {
     font-size: 1.25rem;
 }
+.img {
+    max-width: 100%;
+}
 .circle {
     border-radius: 50%;
-    border: 7px solid #ff6347
+    border: 5px solid #ff6347
 }
 
 a:link, a:visited{
@@ -49,15 +56,39 @@ a:hover {
     grid-column: span 12;
 }
  
-/*Desktop Layout*/
-@media screen and (min-width: 40rem) 
-{
-    .col-span-8 {
-        grid-column: span 8;
-    }
-    .col-span-4 {
-        grid-column: span 4;
-    }
+
+}
+/***** Nav using flexbox ****/
+nav {
+    background-color: seagreen;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+nav ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: flex;
+   flex-flow: row wrap;
+
+}
+nav li {
+    margin: 0 0.5rem;
+}
+nav a:link, nav a:visited { 
+    color: white;
+    text-decoration: none;
+    font-size: 1.25;
+    padding: 1rem;
+    display: block;
+    transition: ease-in-out 250ms;
+}
+nav a:hover {
+    background-color: peru;
+    color: white;
 }
 /***** Components ****/
 .button:link, .button:visited {
@@ -65,7 +96,7 @@ a:hover {
     background-color: #ff6347;
     text-align: center;
     text-decoration: none;
-    padding: .5rem 1.75rem;
+    padding: 1rem 1.75rem;
     border-radius: .5rem;
     box-shadow: 0 .125rem .5rem rgba(0, 0, 0, 15);
     display: inline-block;
@@ -75,3 +106,34 @@ a:hover {
 .button:hover {
     background-color: #852413;
 }
+.card {
+    text-align: center;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 0, .125rem .5rem rgba(0, 0, 0, 15);
+}
+.card-title {
+    margin: 0.75rem 0 0 0;
+    padding: 0 2rem 0.5rem;
+}
+.card-text {
+    margin: 0.5rem 0 1rem 0;
+    padding: 0 2rem 0.5rem;
+}
+/*Desktop Layout*/
+@media screen and (min-width: 40rem) 
+{
+    .col-span-8 {
+        grid-column: span 8;
+    }
+    .col-span-4 {
+        grid-column: span 4;
+    }
+    .work-section {
+        display:flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    .card {
+        flex-basis: 27.5%;
+    }
