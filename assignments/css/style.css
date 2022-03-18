@@ -71,8 +71,7 @@ nav ul {
    list-style: none;
    display: flex;
    flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: center;
+   flex-wrap: nowrap;
 }
 nav li {
     margin: 0 0.5rem;
