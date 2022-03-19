@@ -126,10 +126,11 @@ nav a:hover {
         grid-column: span 4;
     }
     .work-section {
-        display:flex;
+        display: flex;
         justify-content: center;
         flex-flow: row wrap;
     }
     .card {
         flex-basis: 27.5%;
     }
+}
