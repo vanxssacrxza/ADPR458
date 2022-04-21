@@ -1,9 +1,8 @@
 /***** Layout ****/
 .container {
-    background-color: yellow;
-    background-image: url("/food.png");
+    background-color:rgb(255, 180, 20);
     display: grid;
-    gap: 1.5rem;
+    gap: 1 rem;
     grid-template-columns: repeat(12, 1fr);
     margin: 0 auto;
     width: min (95%, 75%rem);
@@ -13,13 +12,18 @@
     grid-column: span 12;
 }
  
+/***** Nav using flexbox ****/
+
 /* Desktop Layout*/
-@media screen and (min-width: 40rem) 
-{
-    .col-span-8 {
-        grid-column: span 8;
-    }
-    .col-span-4 {
-        grid-column: span 4;
-    }
+@media screen and (min-width: 40rem) {
+.homepage-nav-left {
+        grid-column: 4 / span 2;
+        color: white;
+        background-color: black;
+        justify-content:left;
+        display: grid;
+        font-size: 2rem;
+        margin: 4% 0;
 }
+}
+
