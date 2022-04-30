@@ -1,11 +1,13 @@
 
 header {    
     background-color: white;
-    border: 5px black;
-    padding: 2rem;
+
 
 }
-
+nav {
+    border: 5px black;
+    padding: 2rem;
+}
 /***** Layout ****/
 .container {
     background-color: white;
@@ -22,5 +24,5 @@ header {
 
 /* Desktop Layout*/
 @media screen and (min-width: 40rem) {
-    
+
 }
