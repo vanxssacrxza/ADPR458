@@ -1,5 +1,26 @@
-header {
-    background-color: black;
-    color: #ff6347;
+
+header {    
+    background-color: white;
+    border: 5px black;
     padding: 2rem;
+
+}
+
+/***** Layout ****/
+.container {
+    background-color: white;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    width: min (95%, 75%rem);
+}
+
+.container > * {
+    grid-column: span 12;
+}
+
+/* Desktop Layout*/
+@media screen and (min-width: 40rem) {
+    
 }
