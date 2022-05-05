@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #ffffff;
+    --second-color: black;
+    --barely-grey: #f7f7f7;
+    --ish-grey: #E3E2E2;
+    --highlight-color: #8236f5;
+}
+
 * {
     box-sizing: border-box;
     font-family: helvetica;
@@ -6,124 +14,158 @@
 body {
     margin: 0;
 }
+
 h1 {
-    color: black;
+    color: var(--second-color);
     font-size: 60 pt;
     font-weight: bold;
     margin: 0;
 }
+
 h2 {
-    color: black;
+    color: var(--second-color);
     font-size: 50 pt;
     font-weight: bold;
     margin: 0;
 }
+
 h3 {
-    color: black;
+    color: var(--second-color);
     font-size: 35 pt;
     margin: 0;
 }
+
 h4 {
-    color: black;
+    color: var(--second-color);
     font-size: 30;
     margin: 10 pt;
 }
 
+img {
+    
+}
+
+.logo {
+    grid-column: 1 / 3;
+    margin: 4% 0;
+    
+    
+}
+
+.logo img
+{   width: 100%;
+    max-width: 400px;
+    justify-content: left;
+}
+
+.
+.navigation-buttons {
+    color: var(--second-color);
+    font-size: 30;
+    margin: 10;
+    align-items: center;
+    
+}
 
 
+/***** Layout ****/
+.container {
+    background-color: var(--primary-color);
+    display: grid;
+    margin: 0 auto;
+    gap: 1.5rem;
+    width: min(95%, 75rem);
+    grid-template-columns: repeat(12, 1fr);
+}
 
+.container > * {
+    grid-column: span 12;
+}
 
+nav {
+    background-color: var(--barely-grey);
+    padding: 0 1rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    margin: 0rem;
+    padding: 0rem;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+nav button {
+    background-color: var(--second-color);
+    color: var(--primary-color);
+    font-size: 15pt;
+    padding: 10px 20px;
+    margin: 1rem 1rem 1rem 3rem;
+    border: 2px;
+    border-color: var(--second-color);
 
+}
+nav li {
+    margin: 0 1.5rem;
+    color: var(--second-color);
+    font-size: 15pt;
+}
 
+li a {
+    color: var(--second-color);
+}
 
+.hero {
+    background-color: var(--second-color);
+}
+.hero button {
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    font-size: 15pt;
+    padding: 10px 20px;
+    margin: 1rem 1rem 1rem 3rem;
+    border: 2px;
+    border-color: var(--second-color);
+    justify-content: center;
+    border-radius: 25px;
+}
+.subscribe-here {
+    background-color: var(--primary-color); 
+    color: black; 
+    border: 2px solid var(--second-color);
+    justify-content: center;
+  }
+.subscribe-here button {
+    background-color: var(--second-color);
+    color: var(--primary-color);
+    display:flex;
+    justify-content: right; 
+}
+hr { 
+    display: block; 
+    color:black;
+    background-color: black;
+    margin: 0.5, 0.5, auto;
+    overflow: hidden; 
+    border-style: inset; 
+    border-width: 1px;
+    height: 5px;
+}
+footer {
+    align-content: center;
+    list-style: none;
+}
 
+{
 
+}}
+}
 
+/*Desktop Layout*/
+@media screen and (min-width: 40rem) {
 
-
-
-li (basically these are your nav)
-f7f7f7 background color 
-h4 btw 
-font helvetica neue regular 
-font size 30
-black
-subscribe button is black fill white font text 
-
-hero 
-background video coding needs googling
-listen now centered button white she is oval needs googling
-doesnt have an hwhatever because its its own thing
-font helvetica neue bold
-font size 35
-black
-
-subscribe break
-needs a border box propbably around 5 pts 
-make this left aligned
-h2 don't miss bi weekly episodes 
-h3 for every time...
-make this right aligned
-all episodes button white background black border box and black font 
-
-email list 
-centered aligned the 5 pt line 
-h2 emailing list
-h3 smoll paragraph under also incorporate a break between subscribers and always
-email input 
-f7f7f7 color 
-padding is like 2 pts 
-helvetica neue 25 regular 
-how do i make this clickable for people to put this info? google 
-subscribe button is black fill white font text 
-add in the social media buttons, make them small google how to addd
-twitter linkedin instagram linktree
-
-page 2
-centered aligned the 5 pt line 
-we just manually go and insert the popular one lol 
-h1 most popular
-
-(have this be the general podcast episode format)
-box with graphic size 455w x 418h pts 
-h3 listen to this when...
-h2 title of the episode 
-h4 episode description 
-sound bar
-google how to insert this
-black buttons and time
-E3E2E2 for loudness and also episode time
-ffffff for background of the bar 
-
-where to listen break
-black bar background
-white everything for text and logos
-30 pt bold
-
-centered aligned the 5 pt line ( how do i add this just for this page?)
-h1 all episodes 
-
-p3 
-centered aligned the 5 pt line only to the end of the paragraph
-h1 my story 
-h3 paragraghs
-go inside in html and do the cute little font changes 
-black box 
-832x 310y 
-number titles 50 pt bold
-names 35 pt bold
-
-where to listen break
-picture background
-white everything for text and logos
-30 pt bold
-
-emailing list 
-
-all black 
-h1 helvetica neue 60 bold
-h2 helvetica neue 50 bold
-h3 helvetica neue 35 regular
-h4 helvetica neue 30 regular 
-
-i
+}
