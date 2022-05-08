@@ -41,28 +41,13 @@ h4 {
     margin: 10 pt;
 }
 
-
-.logo {
-    grid-column: 1 / 3;
-    margin: 4% 0;
-    
-    
-}
-
 .logo img
 {   width: 100%;
-    max-width: 400px;
-    justify-content: left;
+    max-width: 100px;
+    justify-content: center;
+
 }
 
-
-.navigation-buttons {
-    color: var(--second-color);
-    font-size: 30;
-    margin: 10;
-    align-items: center;
-    
-}
 
 
 /***** Layout ****/
@@ -83,9 +68,11 @@ nav {
     background-color: var(--barely-grey);
     padding: 0 1rem;
     display: flex;
-    justify-content: right;
+    flex-flow: row wrap;
+    justify-content: center;
     align-items: center;
-    position: sticky;
+    color: var(--second-color);
+    margin: 10;
     top: 0;
 }
 nav ul {
@@ -94,7 +81,8 @@ nav ul {
     list-style: none;
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    align-items: right;
+    color: var(--second-color);
 }
 nav button {
     background-color: var(--second-color);
@@ -104,6 +92,7 @@ nav button {
     margin: 1rem 1rem 1rem 3rem;
     border: 2px;
     border-color: var(--second-color);
+    justify-content: right;
 
 }
 nav li {
@@ -118,6 +107,8 @@ li a {
 
 .hero {
     background-color: var(--second-color);
+    display: flex;
+    justify-content: center;
 }
 .hero button {
     background-color: var(--primary-color);
@@ -127,20 +118,28 @@ li a {
     margin: 1rem 1rem 1rem 3rem;
     border: 2px;
     border-color: var(--second-color);
-    justify-content: center;
     border-radius: 25px;
+
 }
 .subscribe-here {
-    background-color: var(--primary-color); 
-    color: black; 
-    border: 2px solid var(--second-color);
-    justify-content: center;
-  }
-.subscribe-here button {
+    justify-content: left;
+    border-style: solid;
+    border: 10px;
+    border-color: var(--second-color);
+}
+.subscribe-here-button {
+    display: flex;
+    justify-content: right; 
+    align-items: right;
+}
+.subscribe-here-button button {
     background-color: var(--second-color);
     color: var(--primary-color);
-    display:flex;
-    justify-content: right; 
+    border: 2px solid var(--second-color);
+    padding: 10px 20px;
+    margin: 1rem 1rem 1rem 3rem;
+    display: flex;
+
 }
 hr { 
     display: block; 
@@ -154,9 +153,13 @@ hr {
 }
 footer {
     align-content: center;
-    list-style: none;
+    
 }
-
+footer ul {
+    list-style: none;
+    margin: 0rem;
+    padding: 0rem;
+}
 
 /*Desktop Layout*/
 @media screen and (min-width: 40rem) {
