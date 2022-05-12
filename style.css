@@ -73,10 +73,7 @@ h5-5 {
     grid-column: span 12;
 }
 .container1-5 {
-    background-image: url(/images/secondary\ color\ background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: #ea97f5;
     height: 30rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -217,8 +214,8 @@ iframe {
     color: var(--primary-color);
 }
 
-.s a {
-    margin: 3rem; 
+.s img {
+    margin-inline: 3rem; 
 }
 .a img {
     margin-inline: 2.5rem; 
@@ -293,7 +290,7 @@ iframe {
         align-items: center;
     }
     .socials {
-        grid-column: 4 / span 3;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
